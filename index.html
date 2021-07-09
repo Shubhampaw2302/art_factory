@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -9,14 +9,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script> 
     <script src="main.js"></script>
 </head>
 <body>
+    <section class="header_top">
+        <i class="icon fas fa-paint-brush fa-2x"></i>
+        <h1 class="head_title">Art Factory</h1>
+
+        <div id="mySidepanel" class="head_link sidepanel">
+            <div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+            <div><a class="links" href="">Home</a></div>
+            <div><a class="links" href="">Events</a></div>
+            <div><a class="links" href="">About</a></div>
+            <div><a class="links" href="">Contact</a></div>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">☰</button>  
+        <script>
+        function openNav() {
+           document.getElementById("mySidepanel").style.width = "150px";
+        }
+
+        function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+    </section>
+
     <section class="header">
         <img class='top_corner' src="splash.png" alt="">
         <img class='bottom_corner' src="splash_reverse.png" alt="">
-        <h1>Art Factory</h1>
+        <h1 class="title">Art Factory</h1>
+        <span class="explore">Explore yourself...</span>
+        <!-- <p class="explore">...Explore yourself</p> -->
+    </section>
+
+    <section class="web_body">
+        <h1 class="edward_quote">"If I could say it in words there would be no reason to paint."</h1>
+        <h1 class="edward_name">— Edward Hopper</h1>
     </section>
 </body>
 </html>
-
