@@ -39,6 +39,10 @@ html, body {
     display: none;
 }
 
+.icon {
+    margin: 10px;
+}
+
 .header {
     position: relative;
     background-color: #FFE0E0;             /* FFEEDB */
@@ -112,7 +116,7 @@ img {
     }
 
     .explore {
-        font-size: 110%;
+        font-size: 130%;
         bottom: 25%;
     }
 }
@@ -128,7 +132,8 @@ img {
     .head_link {
         display: flex;
         position: relative;
-        left: 67%;
+        top: 20%;
+        left: 65%;
     }
 
     .header {
