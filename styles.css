@@ -19,26 +19,6 @@ html, body {
     z-index: 100;
 }
 
-.icon {
-    object-fit: contain;
-    margin: 0 20px;
-    margin-top: 5px;
-    height: 8vh;
-    
-}
-
-.head_title {
-    font-size: 220%;
-}
-
-.head_title:hover {
-    text-shadow: 1px 1px darkgray;
-}
-
-/* .head_link {
-    
-}  */
-
 .head_link div {
     width: 100px;
     height: 50px;
@@ -108,6 +88,8 @@ img {
 .web_body {
     background-color: #FFC0D0; /* FFCDCD */
     padding: 1%;
+    position: relative;
+    top: 50px;
 }
 
 .explore {
@@ -133,10 +115,6 @@ img {
         font-size: 110%;
         bottom: 25%;
     }
-
-    .head_title {
-        font-size: 150%;
-    }
 }
 
 @media (min-width: 1001px) {
@@ -150,7 +128,15 @@ img {
     .head_link {
         display: flex;
         position: relative;
-        left: 55%;
+        left: 67%;
+    }
+
+    .header {
+        top: 0%;
+    }
+
+    .web_body {
+        top: 0%;
     }
 }
 
@@ -209,20 +195,21 @@ img {
         display: inline-block;
       }
 
-      .head_link {
-          flex-direction: column;
+      .header {
+        top: 6.6%;
       }
 
-      .head_title {
-          display: inline;
-          position: absolute;
-          top: -15px;
-          bottom: -45px;
+      .web_body {
+          top: 6.5%;
+      }
+
+      .head_link {
+          flex-direction: column;
       }
 }
 
 @media (min-width: 1001px) and (max-width: 1230px) {
     .head_link {
-        left: 30%;
+        left: 50%;
     }
 }
