@@ -12,14 +12,10 @@ html, body {
 }
 
 .header_top {
-    background-color: #FFC0D0;
-    height: 5%;
-    height: 8vh;
+    background-color: #FFC0D0; 
+    position: fixed;
+    height: 50px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
     z-index: 100;
 }
 
@@ -28,6 +24,7 @@ html, body {
     margin: 0 20px;
     margin-top: 5px;
     height: 8vh;
+    
 }
 
 .head_title {
@@ -38,11 +35,9 @@ html, body {
     text-shadow: 1px 1px darkgray;
 }
 
-.head_link {
-    display: flex;
-    position: relative;
-    left: 55%;
-} 
+/* .head_link {
+    
+}  */
 
 .head_link div {
     width: 100px;
@@ -66,7 +61,7 @@ html, body {
 
 .header {
     position: relative;
-    background-color: #FFE0E0;
+    background-color: #FFE0E0;             /* FFEEDB */
     text-align: center;
     padding: 4%;
 }
@@ -111,7 +106,7 @@ img {
 }
 
 .web_body {
-    background-color: #FFC0D0;
+    background-color: #FFC0D0; /* FFCDCD */
     padding: 1%;
 }
 
@@ -123,15 +118,15 @@ img {
 
 @media (max-width: 605px) {
     .title {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .edward_quote {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .edward_name {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .explore {
@@ -144,18 +139,33 @@ img {
     }
 }
 
-@media (max-width: 750px) {
+@media (min-width: 1001px) {
+    .header_top {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+
+    .head_link {
+        display: flex;
+        position: relative;
+        left: 55%;
+    }
+}
+
+@media (max-width: 1000px) {
     .sidepanel  {
         width: 0;
-        position: absolute;
-        top: 0px;
-        right: 0px;
+        position: fixed;
         z-index: 1;
         height: 250px;
+        top: 0;
+        right: 0;
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 60px;
+        padding-top: 0px;
       }
       
       .sidepanel a {
@@ -182,7 +192,7 @@ img {
         display: inline-block;
         font-size: 20px;
         cursor: pointer;
-        background-color: #FFCDCD;
+        background-color: #FFC0D0; /* FFCDCD */
         color: black;
         padding: 10px 15px;
         border: none;
@@ -202,10 +212,17 @@ img {
       .head_link {
           flex-direction: column;
       }
+
+      .head_title {
+          display: inline;
+          position: absolute;
+          top: -15px;
+          bottom: -45px;
+      }
 }
 
-/* @media (min-width: 760px) and (max-width: 1200px) {
+@media (min-width: 1001px) and (max-width: 1230px) {
     .head_link {
         left: 30%;
     }
-} */
+}
